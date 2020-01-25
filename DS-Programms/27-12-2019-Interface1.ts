@@ -5,18 +5,15 @@ interface Person
 
 }
 
-function addName(Employee: Person): { firstname: string; address: string } 
+function addName(firstname: Person, secondname : Person)
 {
-var newPerson = {firstname: "Ram", address: "South Bopal"}
-newPerson.firstname=Employee.firstname;
-newPerson.address=Employee.secondname;
-return newPerson;
+
+return this.firstname + this.secondname;
 //console.log(newPerson)
 }
 
-var myPerson = addName({firstname: "Shayam", secondname: "Sundar" });
+var myPerson = addName("Shayam","Sundar");
 
-console.log(myPerson.firstname)
-console.log(myPerson.address)
+
 
 
